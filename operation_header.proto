@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message OperationHeader {
+  uint32 timestamp = 1;
+  uint32 clock_us = 2;
+  float controller_kp = 3;
+  float controller_kd = 4;
+  float target_rpm = 5;
+  float wheel_ref_low_rpm = 6;
+  float wheel_ref_high_rpm = 7;
+  float wheel_ref_breakpoint_low_mph = 8;
+  float wheel_ref_breakpoint_high_mph = 9;
+}

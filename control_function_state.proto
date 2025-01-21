@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+message ControlFunctionState {
+  uint32 cycle_count = 1;
+  uint32 cycle_start_us = 2;
+
+  uint32 engine_count = 3;
+  uint32 gear_count = 4;
+
+  float engine_rpm = 5;
+  float secondary_rpm = 6;
+  float filtered_engine_rpm = 7;
+  float filtered_secondary_rpm = 8;
+
+  float target_rpm = 9;
+  float engine_rpm_error = 10;
+
+  float velocity_command = 11;
+  float velocity_estimate = 12;
+  float position_estimate = 13;
+
+  uint32 last_heartbeat_ms = 14;
+  uint32 active_errors = 15;
+  uint32 disarm_reason = 16;
+  uint32 procedure_result = 17;
+
+  float bus_voltage = 18;
+  float bus_current = 19;
+  float iq_measured = 20;
+  float iq_setpoint = 21;
+
+  bool inbound_limit_switch = 22;
+  bool outbound_limit_switch = 23;
+  bool engage_limit_switch = 24;
+
+  bool velocity_mode = 25;
+  float position_command = 26;
+  float engine_rpm_derror = 27;
+  float throttle = 28;
+  float throttle_filtered = 29;
+  float brake = 30;
+  float brake_filtered = 31;
+  float p_term = 32;
+  float d_term = 33;
+  float wheel_ref_low_rpm = 34;
+  float wheel_ref_high_rpm = 35;
+  float wheel_ref_breakpoint_low_mph = 36;
+  float wheel_ref_breakpoint_high_mph = 37;
+  float d_throttle = 38;
+  uint32 raw_throttle = 39;
+  uint32 raw_brake = 40;
+}
