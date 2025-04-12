@@ -54,4 +54,6 @@ message ControlFunctionState {
   uint32 rw_gear_count = 42; 
   float left_front_wheel_rpm = 43;
   float right_front_wheel_rpm = 44;
+  
+  float engine_rpm_error_integral = 45;
 }
