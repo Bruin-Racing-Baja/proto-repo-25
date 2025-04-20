@@ -56,4 +56,6 @@ message ControlFunctionState {
   float right_front_wheel_rpm = 44;
   
   float engine_rpm_error_integral = 45;
+  float actuator_offset = 46;
+  float pi_position_command = 47;
 }
