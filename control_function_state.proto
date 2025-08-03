@@ -58,4 +58,7 @@ message ControlFunctionState {
   float engine_rpm_error_integral = 45;
   float actuator_offset = 46;
   float pi_position_command = 47;
+
+  float total_charge_used = 48;
+  float total_power_used = 49;
 }
